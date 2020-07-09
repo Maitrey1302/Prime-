@@ -1,0 +1,33 @@
+package primenum;
+
+import java.util.Scanner;
+public class PrimeNum {
+
+    /**
+     * @param args the command line arguments
+     */
+    @SuppressWarnings("empty-statement")
+    public static void main(String[] args) {
+        // TODO code application logic here
+    
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter a no");
+        int num=sc.nextInt();
+        boolean isPrime = true;
+        //for loop is all about nonprime
+        for(int i = 2;i<num;i++);{
+            if(num%i==0){
+            isPrime = false;
+            break;
+            }
+        }
+        if(isPrime){
+            System.out.println(num+"is a prime number");
+        }else{
+            System.out.println(num+"Num is not prime");
+            
+        }
+      
+       }
+    
+}
